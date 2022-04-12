@@ -20,8 +20,9 @@ form.addEventListener("submit", (event) => {
     errors.style.marginTop = "30px";
     errors.style.color = "red";
     errors.innerHTML = "Invalid name. 2-100 name length";
+    return;
   } else if (namelen > 2 || namelen < 100) {
-    nameInput.style.borderBottom = "2px solid green";
+    nameInput.style.borderBottom = "1px solid #95989A";
     errors.innerHTML = " ";
   }
 
@@ -30,13 +31,31 @@ form.addEventListener("submit", (event) => {
     errors.style.marginTop = "30px";
     errors.style.color = "red";
     errors.innerHTML = "Invalid email.";
+    return;
   } else if (result === true) {
-    nameInput.style.borderBottom = "2px solid green";
-    errors.innerHTML = " ";
+    nameInput.style.borderBottom = "1px solid #95989A";
+    errors.innerHTML = "";
   }
 
   if (!check) {
     alert("You must give consent");
-    check.style.border = "2px solid red";
+    return;
   }
+
+  fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    body: JSON.stringify({
+      name: naame,
+      email: email,
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8",
+    },
+  })
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+
+  setTimeout(() => {
+    form.reset();
+  }, 1000);
 });
