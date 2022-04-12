@@ -412,6 +412,7 @@ header #btn {
 }
 #third #pricing select option {
   font-weight: bold;
+  border-radius: 5px;
 }
 #third #pricing #options {
   display: flex;
