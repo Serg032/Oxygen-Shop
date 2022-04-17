@@ -9,6 +9,7 @@ body {
 }
 
 header {
+  z-index: 10;
   width: 100%;
   height: 70px;
   position: fixed;
@@ -397,6 +398,7 @@ header #btn {
   border-radius: 5px;
 }
 #third #pricing {
+  z-index: 8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -425,7 +427,7 @@ header #btn {
   gap: 50px;
 }
 #third #pricing #options #basic {
-  z-index: -1;
+  z-index: 9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -500,10 +502,10 @@ header #btn {
   color: #FFFFFF;
 }
 #third #pricing #options #basic:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 #third #pricing #options #professional {
-  z-index: -11;
+  z-index: 9;
   width: 293px;
   height: 251px;
   background: #FFFFFF;
@@ -577,8 +579,11 @@ header #btn {
   border: none;
   color: #FFFFFF;
 }
+#third #pricing #options #professional:hover {
+  transform: scale(1.1);
+}
 #third #pricing #options #premium {
-  z-index: -11;
+  z-index: 9;
   width: 293px;
   height: 251px;
   background: #FFFFFF;
@@ -658,6 +663,9 @@ header #btn {
   line-height: 18px;
   /* identical to box height */
   color: #FFFFFF;
+}
+#third #pricing #options #premium:hover {
+  transform: scale(1.1);
 }
 #third #questions {
   margin-top: 80px;
@@ -962,6 +970,7 @@ footer #socials {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   #carousel #photos {
     display: flex;
@@ -996,6 +1005,7 @@ footer #socials {
   #third #toPlan {
     display: flex;
     flex-direction: row;
+    gap: 200px;
     padding: 70px;
   }
   #third #fourth #tresSeven {
@@ -1091,6 +1101,7 @@ footer #socials {
     width: 372px;
     height: 461px;
     transition: all 0.2s ease;
+    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
   }
   #third #pricing #options #basic #main {
     display: flex;
@@ -1101,9 +1112,6 @@ footer #socials {
     position: relative;
     top: 40px;
     border: none;
-  }
-  #third #pricing #options #basic:hover {
-    transform: scale(1.2);
   }
   #third #pricing #options #professional {
     width: 372px;
@@ -1127,6 +1135,7 @@ footer #socials {
     width: 372px;
     height: 461px;
     transition: all 0.2s ease;
+    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
   }
   #third #pricing #options #premium #main {
     display: flex;
