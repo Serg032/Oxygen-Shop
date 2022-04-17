@@ -148,6 +148,10 @@ header #btn {
   background-color: #919191;
   border-radius: 50%;
 }
+#carousel #buttons button:hover {
+  transform: scale(1.2);
+  background-color: #07ACE6;
+}
 
 #third {
   margin-top: 40px;
@@ -421,7 +425,7 @@ header #btn {
   gap: 50px;
 }
 #third #pricing #options #basic {
-  z-index: -11;
+  z-index: -1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -495,10 +499,13 @@ header #btn {
   position: relative;
   color: #FFFFFF;
 }
+#third #pricing #options #basic:hover {
+  transform: scale(1.3);
+}
 #third #pricing #options #professional {
   z-index: -11;
-  width: 339px;
-  height: 277px;
+  width: 293px;
+  height: 251px;
   background: #FFFFFF;
   border: 1px solid #07ACE6;
   box-sizing: border-box;
@@ -907,6 +914,237 @@ footer #socials {
 }
 #subs #subscribe #close {
   color: red;
+}
+
+@media screen and (min-width: 1000px) {
+  header .links-dsk {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-right: 20px;
+  }
+  header .links-dsk #link {
+    text-decoration: none;
+    width: 54px;
+    height: 15px;
+    left: 1280px;
+    top: 31px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 15px;
+    /* identical to box height, or 136% */
+    text-align: center;
+    letter-spacing: 3.28px;
+    text-transform: uppercase;
+    color: #A5A5A5;
+    transition: all 0.4s ease;
+  }
+  header .links-dsk #link:hover {
+    color: black;
+  }
+  header .links {
+    display: none;
+  }
+  header #btn {
+    display: none;
+  }
+
+  #first {
+    height: 500px;
+  }
+  #first h2 {
+    margin-top: 150px;
+  }
+
+  #carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #carousel #photos {
+    display: flex;
+    flex-direction: center;
+  }
+  #carousel #photos #photo {
+    position: absolute;
+    top: 35 0px;
+    width: 700px;
+    height: 300px;
+    left: 33%;
+    z-index: -10;
+    border-radius: 5px;
+  }
+
+  #third h2 {
+    margin-top: 50px;
+    text-align: start;
+    width: 916px;
+    height: 42px;
+    left: 455px;
+    top: 1012px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    /* identical to box height, or 117% */
+    text-align: center;
+    color: #000000;
+  }
+  #third #toPlan {
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+  }
+  #third #fourth #tresSeven {
+    width: 1015px;
+    height: 370px;
+    left: 0px;
+    background: #FFFFFF;
+    border: 1px solid #E8E9ED;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  #third #fourth #tresSeven #pictures #frame {
+    position: relative;
+    top: 100px;
+    left: 650px;
+    width: 170px;
+    height: 170px;
+  }
+  #third #fourth #tresSeven #pictures #stuff {
+    position: relative;
+    top: 80px;
+    left: 400px;
+  }
+  #third #fourth #tresSeven #pictures #always {
+    position: relative;
+    top: -100px;
+    left: 50px;
+  }
+  #third #fourth #tresSeven #pictures #tempor {
+    position: relative;
+    top: -100px;
+    left: 50px;
+    width: 400px;
+  }
+  #third #fourth #tresSeven #pictures #blue {
+    position: relative;
+    top: 90px;
+    left: 60px;
+    width: 230px;
+    height: 230px;
+  }
+  #third #fourth #tresSeven #pictures #phone {
+    position: relative;
+    top: -170px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+  }
+  #third #fourth #tresSeven #pictures #your {
+    position: relative;
+    top: -520px;
+    left: 600px;
+  }
+  #third #fourth #tresSeven #pictures #lorem {
+    position: relative;
+    top: -520px;
+    left: 600px;
+  }
+  #third #fourth #tresFour {
+    width: 1015px;
+    height: 370px;
+  }
+  #third #fourth #tresFour p {
+    width: 500px;
+  }
+  #third #fourth #turquose {
+    position: relative;
+    top: -283px;
+    left: 310px;
+    height: 370px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #third #fourth #turquose #trumpet {
+    position: relative;
+    top: 50px;
+  }
+  #third #pricing #choice {
+    position: relative;
+    left: 500px;
+    top: -20px;
+  }
+  #third #pricing #options {
+    display: flex;
+    flex-direction: row;
+  }
+  #third #pricing #options #basic {
+    width: 372px;
+    height: 461px;
+    transition: all 0.2s ease;
+  }
+  #third #pricing #options #basic #main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  #third #pricing #options #basic button {
+    position: relative;
+    top: 40px;
+    border: none;
+  }
+  #third #pricing #options #basic:hover {
+    transform: scale(1.2);
+  }
+  #third #pricing #options #professional {
+    width: 372px;
+    height: 461px;
+    transition: all 0.2s ease;
+  }
+  #third #pricing #options #professional #main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  #third #pricing #options #professional button {
+    position: relative;
+    top: 40px;
+    border: none;
+  }
+  #third #pricing #options #professional button:hover {
+    transform: scale(1.3);
+  }
+  #third #pricing #options #premium {
+    width: 372px;
+    height: 461px;
+    transition: all 0.2s ease;
+  }
+  #third #pricing #options #premium #main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  #third #pricing #options #premium button {
+    position: relative;
+    top: 40px;
+    left: 110px;
+    border: none;
+  }
+  #third #questions {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,13 +1,8 @@
+//
 const basicCurrency = document.querySelector(".basicCurrency");
 const proCurrency = document.querySelector(".proCurrency");
 const premiumCurrency = document.querySelector(".premiumCurrency");
 const choice = document.querySelector("#choice");
-
-console.log(choice.value);
-
-// let dollar;
-// let pound;
-// let euro;
 
 let currencies = {
   dollar: 0,
@@ -25,31 +20,25 @@ fetch(
     currencies.euro = data.usd.eur;
     currencies.dollar = data.usd.usd;
     currencies.pound = data.usd.gbp;
-    console.log(`eur: ${currencies.euro}`);
-    console.log(`dollar: ${currencies.dollar}`);
-    console.log(`pound: ${currencies.pound}`);
   });
 
 choice.addEventListener("click", () => {
   console.log("clicked");
+
+  switch (choice.value) {
+    case "eur":
+      basicCurrency.textContent = `0€`;
+      proCurrency.textContent = Math.floor(25 * currencies.euro) + "€";
+      premiumCurrency.textContent = Math.floor(60 * currencies.euro) + "€";
+      break;
+    case "usd":
+      basicCurrency.textContent = `0$`;
+      proCurrency.textContent = "25$";
+      premiumCurrency.textContent = "60$";
+      break;
+    case "gbp":
+      basicCurrency.textContent = `0£`;
+      proCurrency.textContent = Math.floor(25 * currencies.pound) + "£";
+      premiumCurrency.textContent = Math.floor(60 * currencies.pound) + "£";
+  }
 });
-
-// let money = Number((proCurrency.textContent = 25 * euro));
-
-// switch (choice.value) {
-//   case "eur":
-//     basicCurrency.textContent = 0;
-//     proCurrency.textContent = 25 * euro;
-//     premiumCurrency.textContent = 60 * euro;
-//     break;
-//   case "usd":
-//     basicCurrency.innerHTML = 0;
-//     proCurrency.innerHTML = 25;
-//     premiumCurrency.innerHTML = 60;
-//     break;
-//   case "gbp":
-//     basicCurrency.innerHTML = 0;
-//     proCurrency.innerHTML = 25 * pound;
-//     premiumCurrency.innerHTML = 60 * pound;
-//     break;
-// }
