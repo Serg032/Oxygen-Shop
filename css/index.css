@@ -441,7 +441,6 @@ header #btn {
   flex-direction: row;
   align-items: center;
   gap: 60px;
-  justify-content: center;
 }
 #third #pricing #options #basic #main #title {
   width: 52px;
@@ -467,8 +466,15 @@ header #btn {
   /* identical to box height, or 139% */
   color: #FB3B64;
 }
+#third #pricing #options #basic #main ul {
+  list-style: none;
+}
 #third #pricing #options #basic #main li {
-  width: 124px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-start;
+  width: 174px;
   height: 19px;
   margin-bottom: 10px;
   font-family: "Open Sans";
@@ -512,7 +518,9 @@ header #btn {
 #third #pricing #options #professional #main {
   padding: 40px;
   display: flex;
-  gap: 100px;
+  flex-direction: row;
+  align-items: center;
+  gap: 70px;
   justify-content: center;
 }
 #third #pricing #options #professional #main #title {
@@ -539,8 +547,15 @@ header #btn {
   /* identical to box height, or 139% */
   color: #07ACE6;
 }
+#third #pricing #options #professional #main ul {
+  list-style: none;
+}
 #third #pricing #options #professional #main li {
-  width: 124px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-start;
+  width: 174px;
   height: 19px;
   margin-bottom: 10px;
   font-family: "Open Sans";
@@ -556,6 +571,7 @@ header #btn {
   width: 150px;
   height: 50px;
   position: relative;
+  top: 180px;
   background: #07ACE6;
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
   border-radius: 23px;
@@ -624,8 +640,14 @@ header #btn {
   /* identical to box height */
   color: #13253B;
 }
+#third #pricing #options #premium #main ul {
+  list-style: none;
+}
 #third #pricing #options #premium #main li {
-  width: 124px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 174px;
   height: 19px;
   margin-bottom: 10px;
   font-family: "Open Sans";

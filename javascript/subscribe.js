@@ -4,18 +4,20 @@ const closer = document.getElementById("close");
 const bb = document.getElementsByTagName("body");
 
 export const showPopUp = () => {
-  form_sec.style.transform = "translateX(0)";
+  if (
+    !localStorage.getItem("form", "sended") &&
+    !sessionStorage.getItem("form", "closed")
+  ) {
+    form_sec.style.transform = "translateX(0)";
+  }
 };
 
 setTimeout(showPopUp, 5000);
 
 closer.addEventListener("click", () => {
+  sessionStorage.setItem("form", "closed");
   form_sec.style.transform = "translateX(-100%)";
 });
-
-// if ((localStorage = "")) {
-//   form_sec.style.transform = "scale(-100%)";
-// }
 
 formu.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -40,7 +42,7 @@ formu.addEventListener("submit", (event) => {
     .then((response) => response.json())
     .then((json) => console.log(json));
 
-  localStorage.setItem("form", 1);
+  localStorage.setItem("form", "sended");
 
   formu.reset();
 

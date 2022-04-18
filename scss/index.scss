@@ -535,7 +535,7 @@ display: none;
                     flex-direction: row;
                     align-items: center;
                     gap: 60px;
-                    justify-content: center;
+                    // justify-content: center;
 
                     
                 
@@ -570,10 +570,23 @@ display: none;
 
                     color: #FB3B64;
                 }
+
+                ul{
+                    list-style: none;
+                    // display: flex;
+                    // flex-direction: column;
+                    // // align-items: flex-start;
+                    // justify-content: flex-start;
+                }
                 
 
                 li{
-                    width: 124px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    // align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 174px;
                     height: 19px;
                    
                     margin-bottom: 10px;
@@ -634,7 +647,9 @@ display: none;
                             #main{
                                 padding: 40px;
                                 display: flex;
-                                gap: 100px;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 70px;
                                 justify-content: center;
 
                                 #title{
@@ -668,8 +683,17 @@ display: none;
                                     color: #07ACE6;
                                 }
 
+                                ul{
+                                    list-style: none;
+                                }
+
                                 li{
-                                    width: 124px;
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 20px;
+                                    // align-items: flex-start;
+                                    justify-content: flex-start;
+                                    width: 174px;
                                     height: 19px;
                                 
                                     margin-bottom: 10px;
@@ -693,6 +717,7 @@ display: none;
                                     height: 50px;
                                   
                                     position: relative;
+                                    top: 180px;
                                     background: #07ACE6;
                                     box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
                                     border-radius: 23px;
@@ -781,8 +806,16 @@ display: none;
                                     color: #13253B;
                                 }
 
+                                ul{
+                                    list-style: none;
+                                }
+
                                 li{
-                                    width: 124px;
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 20px;
+                                    // align-items: flex-start;
+                                    width: 174px;
                                     height: 19px;
                                    
                                     margin-bottom: 10px;
