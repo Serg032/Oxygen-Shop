@@ -13,6 +13,10 @@ closer.addEventListener("click", () => {
   form_sec.style.transform = "translateX(-100%)";
 });
 
+// if ((localStorage = "")) {
+//   form_sec.style.transform = "scale(-100%)";
+// }
+
 formu.addEventListener("submit", (event) => {
   event.preventDefault();
   const email = document.getElementById("emailValue").value;
@@ -35,6 +39,8 @@ formu.addEventListener("submit", (event) => {
   })
     .then((response) => response.json())
     .then((json) => console.log(json));
+
+  localStorage.setItem("form", 1);
 
   formu.reset();
 

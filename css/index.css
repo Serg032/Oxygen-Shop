@@ -1,53 +1,3 @@
-#priceBlue {
-  position: relative;
-  width: 150px;
-  height: 50px;
-  top: -5px;
-  background: #EB476E;
-  border-radius: 23px;
-  border: none;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  /* identical to box height */
-  color: #FFFFFF;
-}
-
-#price4prem {
-  position: relative;
-  width: 150px;
-  height: 50px;
-  top: 15px;
-  background: #55DFB4;
-  border-radius: 23px;
-  border: none;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  /* identical to box height */
-  color: #FFFFFF;
-}
-
-#price1Btn {
-  width: 150px;
-  height: 50px;
-  border: none;
-  position: relative;
-  top: 15px;
-  background: #07ACE6;
-  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
-  border-radius: 23px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  /* identical to box height */
-  color: #FFFFFF;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -112,13 +62,12 @@ header #btn {
 }
 
 #progress {
-  z-index: 15;
+  z-index: 99;
   background-color: blueviolet;
-  height: 3px;
+  height: 4px;
   width: 0;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 70px;
 }
 
 #tBig {
@@ -478,14 +427,9 @@ header #btn {
 }
 #third #pricing #options #basic {
   z-index: 9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 20px;
   width: 293px;
   height: 251px;
-  left: 0px;
-  top: 0px;
   background: #FFFFFF;
   border: 1px solid #FB3B64;
   box-sizing: border-box;
@@ -536,6 +480,22 @@ header #btn {
   text-align: center;
   color: #000000;
 }
+#third #pricing #options #basic button {
+  position: relative;
+  left: 70px;
+  width: 150px;
+  height: 50px;
+  background: #EB476E;
+  border-radius: 23px;
+  border: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
 #third #pricing #options #basic:hover {
   transform: scale(1.05);
 }
@@ -548,15 +508,10 @@ header #btn {
   box-sizing: border-box;
   box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
   border-radius: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 #third #pricing #options #professional #main {
   padding: 40px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 100px;
   justify-content: center;
 }
@@ -597,6 +552,23 @@ header #btn {
   text-align: center;
   color: #000000;
 }
+#third #pricing #options #professional button {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  background: #07ACE6;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  border-radius: 23px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #FFFFFF;
+  left: 70px;
+  border: none;
+}
 #third #pricing #options #professional:hover {
   transform: scale(1.05);
 }
@@ -608,9 +580,6 @@ header #btn {
   border: 1px solid #55DFB4;
   box-sizing: border-box;
   border-radius: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 #third #pricing #options #premium #main {
   padding: 40px;
@@ -667,6 +636,24 @@ header #btn {
   /* identical to box height */
   text-align: center;
   color: #000000;
+}
+#third #pricing #options #premium button {
+  width: 150px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+  background: #55DFB4;
+  border-radius: 23px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  border: none;
+  left: 70px;
+  position: relative;
+  color: #FFFFFF;
 }
 #third #pricing #options #premium:hover {
   transform: scale(1.05);
@@ -1122,8 +1109,8 @@ footer #socials {
     position: relative;
   }
   #third #pricing #options #basic button {
-    top: 40px;
-    height: 50px;
+    top: 60px;
+    left: 100px;
   }
   #third #pricing #options #professional {
     width: 372px;
@@ -1137,7 +1124,7 @@ footer #socials {
   }
   #third #pricing #options #professional button {
     top: 20px;
-    height: 50px;
+    left: 100px;
   }
   #third #pricing #options #premium {
     width: 372px;
@@ -1151,9 +1138,8 @@ footer #socials {
     position: relative;
   }
   #third #pricing #options #premium button {
-    position: relative;
     top: 40px;
-    height: 50px;
+    left: 110px;
   }
   #third #questions {
     padding: 100px;
