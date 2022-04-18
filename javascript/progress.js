@@ -1,6 +1,13 @@
+import { showPopUp } from "./subscribe.js";
+
 let bar = document.querySelector("#progress");
 
 window.addEventListener("scroll", () => {
-  let max = document.body.scrollHeight - innerHeight;
-  bar.style.width = `${(pageYOffset / max) * 100}%`;
+  const max = document.body.scrollHeight - innerHeight;
+  const percentage = (window.pageYOffset / max) * 100;
+  bar.style.width = `${percentage}%`;
+  if (percentage >= 25 && percentage < 27) {
+    showPopUp();
+    console.log("scrolling to 25");
+  }
 });

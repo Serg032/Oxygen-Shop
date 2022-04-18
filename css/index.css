@@ -1,3 +1,53 @@
+#priceBlue {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  top: -5px;
+  background: #EB476E;
+  border-radius: 23px;
+  border: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+#price4prem {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  top: 15px;
+  background: #55DFB4;
+  border-radius: 23px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+#price1Btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  position: relative;
+  top: 15px;
+  background: #07ACE6;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  border-radius: 23px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +59,7 @@ body {
 }
 
 header {
-  z-index: 10;
+  z-index: 14;
   width: 100%;
   height: 70px;
   position: fixed;
@@ -30,19 +80,20 @@ header .links {
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 10px;
   position: fixed;
   transition: all 0.8s ease;
   transform: translateX(-100%);
   top: 70px;
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-color: white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 }
 header .links li {
   margin-top: 30px;
+  margin-left: 20px;
 }
 header .links li a {
   text-decoration: none;
@@ -61,7 +112,9 @@ header #btn {
 }
 
 #progress {
-  border-bottom: 4px solid rgb(98, 98, 250);
+  z-index: 15;
+  background-color: blueviolet;
+  height: 3px;
   width: 0;
   position: fixed;
   top: 0;
@@ -112,54 +165,47 @@ header #btn {
   color: white;
 }
 
-#carousel {
-  z-index: -10;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#carousel #photos {
-  width: 300px;
-  height: 300px;
-}
-#carousel #photos #photo {
-  position: absolute;
-  top: 35 0px;
-  width: 300px;
-  height: 300px;
-  z-index: -10;
-  border-radius: 5px;
-}
-#carousel #photos .two {
-  display: none;
-}
-#carousel #photos .three {
-  display: none;
-}
-#carousel #buttons {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
-}
-#carousel #buttons button {
-  width: 20px;
-  height: 20px;
-  border: none;
-  background-color: #919191;
-  border-radius: 50%;
-}
-#carousel #buttons button:hover {
-  transform: scale(1.2);
-  background-color: #07ACE6;
-}
-
 #third {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
+}
+#third #slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+#third #slider img {
+  position: absolute;
+  top: 2750px;
+  width: 300px;
+  border-radius: 6px;
+}
+#third #slider .two {
+  display: none;
+}
+#third #slider .three {
+  display: none;
+}
+#third #slider #buttons {
+  position: relative;
+  top: 450px;
+  display: flex;
+  gap: 10px;
+}
+#third #slider #buttons button {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: none;
+}
+#third #slider #buttons button:hover {
+  transform: scale(1.2);
+  background-color: #07ACE6;
 }
 #third h2 {
   width: 303px;
@@ -486,23 +532,8 @@ header #btn {
   text-align: center;
   color: #000000;
 }
-#third #pricing #options #basic button {
-  z-index: -10;
-  width: 150px;
-  height: 50px;
-  background: #EB476E;
-  border-radius: 23px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  /* identical to box height */
-  position: relative;
-  color: #FFFFFF;
-}
 #third #pricing #options #basic:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 #third #pricing #options #professional {
   z-index: 9;
@@ -562,25 +593,8 @@ header #btn {
   text-align: center;
   color: #000000;
 }
-#third #pricing #options #professional #price1Btn {
-  z-index: -10;
-  width: 150px;
-  height: 80px;
-  background: #07ACE6;
-  border-radius: 23px;
-  position: relative;
-  top: 25px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  /* identical to box height */
-  border: none;
-  color: #FFFFFF;
-}
 #third #pricing #options #professional:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 #third #pricing #options #premium {
   z-index: 9;
@@ -590,6 +604,9 @@ header #btn {
   border: 1px solid #55DFB4;
   box-sizing: border-box;
   border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #third #pricing #options #premium #main {
   padding: 40px;
@@ -647,25 +664,8 @@ header #btn {
   text-align: center;
   color: #000000;
 }
-#third #pricing #options #premium button {
-  z-index: -10;
-  width: 150px;
-  height: 50px;
-  position: relative;
-  left: 65px;
-  border: none;
-  background: #55DFB4;
-  border-radius: 23px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  /* identical to box height */
-  color: #FFFFFF;
-}
 #third #pricing #options #premium:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 #third #questions {
   margin-top: 80px;
@@ -855,6 +855,7 @@ footer #socials {
 }
 
 #subs {
+  z-index: 10;
   position: fixed;
   top: 200px;
   width: 100%;
@@ -966,26 +967,25 @@ footer #socials {
     margin-top: 150px;
   }
 
-  #carousel {
+  #third {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-  #carousel #photos {
-    display: flex;
-    flex-direction: center;
+  #third #slider {
+    width: 100%;
   }
-  #carousel #photos #photo {
-    position: absolute;
-    top: 35 0px;
-    width: 700px;
-    height: 300px;
-    left: 33%;
-    z-index: -10;
-    border-radius: 5px;
+  #third #slider img {
+    position: relative;
+    top: 50px;
+    width: 1000px;
+    height: 400px;
   }
-
+  #third #slider #buttons {
+    position: relative;
+    top: 60px;
+  }
+  #third #slider #buttons button {
+    background-color: #13253B;
+  }
   #third h2 {
     margin-top: 50px;
     text-align: start;
@@ -1109,9 +1109,8 @@ footer #socials {
     position: relative;
   }
   #third #pricing #options #basic button {
-    position: relative;
     top: 40px;
-    border: none;
+    height: 50px;
   }
   #third #pricing #options #professional {
     width: 372px;
@@ -1124,12 +1123,8 @@ footer #socials {
     position: relative;
   }
   #third #pricing #options #professional button {
-    position: relative;
-    top: 40px;
-    border: none;
-  }
-  #third #pricing #options #professional button:hover {
-    transform: scale(1.3);
+    top: 20px;
+    height: 50px;
   }
   #third #pricing #options #premium {
     width: 372px;
@@ -1145,14 +1140,17 @@ footer #socials {
   #third #pricing #options #premium button {
     position: relative;
     top: 40px;
-    left: 110px;
-    border: none;
+    height: 50px;
   }
   #third #questions {
     padding: 100px;
     display: flex;
     flex-direction: row;
     gap: 150px;
+  }
+
+  footer {
+    width: 100%;
   }
 }
 

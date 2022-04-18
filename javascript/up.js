@@ -4,6 +4,9 @@ upBtn.addEventListener("click", count);
 
 function count() {
   setTimeout(() => {
-    window.scrollTo(pageXOffset, 0);
+    window.scrollTo({
+      top: 100,
+      behavior: "smooth",
+    });
   }, 1500);
 }
