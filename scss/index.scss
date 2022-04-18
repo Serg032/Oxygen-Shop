@@ -146,6 +146,10 @@ header{
     top: 0; left: 0;
 }
 
+#tBig{
+display: none;
+}
+
 #first{
     z-index: -10;
 }
@@ -217,7 +221,7 @@ header{
 
             img{
                 position: absolute;
-                top: 2750px;
+                top: 2950px;
                 width: 300px;
                 border-radius: 6px;
             }
@@ -232,7 +236,7 @@ header{
 
         #buttons{
             position: relative;
-            top: 450px;
+            top: 350px;
             display: flex;
             gap: 10px;
 
@@ -1174,6 +1178,14 @@ footer{
 @media screen and (min-width:1000px) {
 
     
+    #coffeeKey{
+        display: none;
+    }
+
+    #tBig{
+        display: block;
+        width: 100%;
+    }
 
     header{
         .links-dsk{

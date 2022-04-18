@@ -121,6 +121,10 @@ header #btn {
   left: 0;
 }
 
+#tBig {
+  display: none;
+}
+
 #first {
   z-index: -10;
 }
@@ -181,7 +185,7 @@ header #btn {
 }
 #third #slider img {
   position: absolute;
-  top: 2750px;
+  top: 2950px;
   width: 300px;
   border-radius: 6px;
 }
@@ -193,7 +197,7 @@ header #btn {
 }
 #third #slider #buttons {
   position: relative;
-  top: 450px;
+  top: 350px;
   display: flex;
   gap: 10px;
 }
@@ -926,6 +930,15 @@ footer #socials {
 }
 
 @media screen and (min-width: 1000px) {
+  #coffeeKey {
+    display: none;
+  }
+
+  #tBig {
+    display: block;
+    width: 100%;
+  }
+
   header .links-dsk {
     display: flex;
     list-style: none;
