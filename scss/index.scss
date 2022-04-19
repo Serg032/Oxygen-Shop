@@ -519,7 +519,7 @@ display: none;
 
             #basic{
                 z-index: 9;
-                gap: 20px;
+                // gap: 20px;
                 width: 293px;
                 height: 251px;
                 background: #FFFFFF;
@@ -534,7 +534,7 @@ display: none;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    gap: 60px;
+                    gap: 20px;
                     // justify-content: center;
 
                     
@@ -649,7 +649,7 @@ display: none;
                                 display: flex;
                                 flex-direction: row;
                                 align-items: center;
-                                gap: 70px;
+                                gap: 52px;
                                 justify-content: center;
 
                                 #title{
@@ -717,7 +717,7 @@ display: none;
                                     height: 50px;
                                   
                                     position: relative;
-                                    top: 180px;
+                                    top: 0px;
                                     background: #07ACE6;
                                     box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
                                     border-radius: 23px;
@@ -759,7 +759,7 @@ display: none;
                                 display: flex;
                                 flex-direction: row;
                                 align-items: center;
-                                gap: 60px;
+                                gap: 30px;
                                 justify-content: center;
 
                                 #title{
@@ -1449,7 +1449,7 @@ footer{
                 }
 
                 button{
-                    top: 60px;
+                    top: 100px;
                     left: 100px;
                 }
                  
@@ -1467,8 +1467,8 @@ footer{
                 }
 
                 button{
-                    top: 20px;
-                    left: 100px;
+                    top: 70px;
+                    left: 110px;
                 }
 
             }
@@ -1488,7 +1488,7 @@ footer{
                 }
                 
                     button{
-                        top: 40px;
+                        top: 70px;
                         left: 110px;
                     }
                 

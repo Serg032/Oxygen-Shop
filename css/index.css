@@ -427,7 +427,6 @@ header #btn {
 }
 #third #pricing #options #basic {
   z-index: 9;
-  gap: 20px;
   width: 293px;
   height: 251px;
   background: #FFFFFF;
@@ -440,7 +439,7 @@ header #btn {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 60px;
+  gap: 20px;
 }
 #third #pricing #options #basic #main #title {
   width: 52px;
@@ -520,7 +519,7 @@ header #btn {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 70px;
+  gap: 52px;
   justify-content: center;
 }
 #third #pricing #options #professional #main #title {
@@ -571,7 +570,7 @@ header #btn {
   width: 150px;
   height: 50px;
   position: relative;
-  top: 180px;
+  top: 0px;
   background: #07ACE6;
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
   border-radius: 23px;
@@ -602,7 +601,7 @@ header #btn {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
   justify-content: center;
 }
 #third #pricing #options #premium #main #title {
@@ -1131,7 +1130,7 @@ footer #socials {
     position: relative;
   }
   #third #pricing #options #basic button {
-    top: 60px;
+    top: 100px;
     left: 100px;
   }
   #third #pricing #options #professional {
@@ -1145,8 +1144,8 @@ footer #socials {
     position: relative;
   }
   #third #pricing #options #professional button {
-    top: 20px;
-    left: 100px;
+    top: 70px;
+    left: 110px;
   }
   #third #pricing #options #premium {
     width: 372px;
@@ -1160,7 +1159,7 @@ footer #socials {
     position: relative;
   }
   #third #pricing #options #premium button {
-    top: 40px;
+    top: 70px;
     left: 110px;
   }
   #third #questions {
